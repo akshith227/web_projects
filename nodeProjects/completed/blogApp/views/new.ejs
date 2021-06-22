@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Blog Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/newPage/new.css" />
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="code icon"></i> Blog Site</div>
+            <a href="/" class="item">Home</a>
+            <a href="/blogs/new" class="item">Create</a>
+        </div>
+    </div>
+    <div class="ui main text container segment">
+        <div class="ui huge header">
+            New Blog
+        </div>
+        <form action="/blogs" method="post" class="ui form">
+            <div class="field">
+                <label for="title">Title: </label>
+                <input type="text" name="blog[title]" id="title" placeholder="Title" required>
+            </div>
+            <div class="field">
+                <label for="image">Image U.R.L: </label>
+                <input type="text" name="blog[image]" id="image" placeholder="Image" required>
+            </div>
+            <div class="field">
+                <label for="content">Content: </label>
+                <textarea name="blog[body]" id="content" placeholder="Blog content goes here!" required></textarea>
+            </div>
+            <button class="ui violet big inverted button" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/newPage/new.js"></script>
+</body>
+
+</html>

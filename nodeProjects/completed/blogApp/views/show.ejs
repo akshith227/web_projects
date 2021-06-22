@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= post.title %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/showPage/show.css" />
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="code icon"></i> Blog Site</div>
+            <a href="/" class="item">Home</a>
+            <a href="/blogs/new" class="item">Create</a>
+        </div>
+    </div>
+    <div class="ui text main container segment">
+        <div class="ui huge header">
+            <%= post.title %>
+        </div>
+        <div class="ui top attatched">
+            <div class="item">
+                <img src="<%=post.image%>" alt="" class="ui centered rounded image">
+                <div class="content">
+                    <%= post.created.toDateString() %>
+                </div>
+                <div class="description">
+                    <%- post.body %>
+                </div>
+                <a href="/blogs/<%=post._id%>/edit" class="ui blue big inverted button">Edit</a>
+                <form action="/blogs/<%=post._id%>?_method=delete" method="POST" id="deleteForm" class="ui form">
+                    <input type="submit" value="Delete" class="ui red big inverted button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/showPage/show.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "movieapiexcercise",
+  "version": "1.0.0",
+  "description": "The Movie A.P.I excercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshith Hiremath",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
