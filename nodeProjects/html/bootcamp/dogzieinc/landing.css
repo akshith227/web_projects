@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+}
+
+.container>.row {
+    padding-top: 25%;
+    text-align: center;
+}
+
+h1,
+h3 {
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 12px 23px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+
+}
+
+h1 {
+    /* text-decoration: underline; */
+    font-size: 5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgb(255, 255, 255, 0));
+}
+
+body {
+    background: url(https://source.unsplash.com/ISg37AI2A-s);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
